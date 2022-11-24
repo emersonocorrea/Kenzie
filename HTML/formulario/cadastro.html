@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        form div + div{
+            margin-top: 10px;
+            
+
+        }
+
+        form{
+            margin: auto;
+            width: 600px;
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+
+        label{
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+
+        section > h1{
+            text-align: center;
+            font-size: 2em;
+        }
+
+        
+        
+        textarea{
+            vertical-align: top;
+            height: 5em;
+            resize: vertical;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+
+            <h1>Formulario de Cadastro</h1>
+
+            
+
+            <form>
+                
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="digite seu nome">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="email obrigatorio" required="true">
+                </div>
+
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <input type="text" name="descricao" id="descricao" placeholder="fale mais sobre voce aqui" maxlength="200">
+                </div>
+
+                <div>
+                    <label for="modulo">Modulo</label>
+                    <select name="modulo" id="modulo">
+                        <option value="">escolha um modulo</option>
+                        <option value="m1">M1</option>
+                        <option value="m2">M2</option>
+                        <option value="m3">M3</option>
+                        <option value="m4">M4</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="password">Senha</label>
+                    <input type="password" name="senha" id="password" placeholder="digite uma senha" required="true" maxlength="8">
+                </div>
+
+                <div>
+                    <label for="password">confirme a Senha</label>
+                    <input type="password" name="senha" id="password" placeholder="digite uma senha" required="true" maxlength="8">
+                </div>
+
+                <div>
+
+                    <p>deseja receber novidades em seu email ?</p>
+
+                    <label for="sim">sim</label>
+                    <input type="radio" id="sim" name="novidades">
+
+                    <label for="nao">nao</label>
+                    <input type="radio" id="nao" name="novidades">
+                </div>
+
+                <div>
+                    <input type="submit" value="enviar">
+                </div>
+               
+            </form>
+        </section>
+    </main>
+</body>
+</html>
